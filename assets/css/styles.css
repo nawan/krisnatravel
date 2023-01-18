@@ -81,6 +81,11 @@ section {
     font-weight: 500;
 }
 
+.menu-wrapper .menu .menu-link .active {
+    font-weight: bold;
+    color: var(--second-color);
+}
+
 .menu-wrapper .menu .menu-link:hover {
     font-weight: bold;
     color: var(--second-color);
