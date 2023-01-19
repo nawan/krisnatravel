@@ -995,10 +995,6 @@ section {
 
 @media screen and (max-width: 450px) {
     
-    .nav-wrapper .menu-wrapper {
-        margin-top: 0;
-        width: 0%;
-    }
     .banner1 .heading {
         text-align: center;
     }
