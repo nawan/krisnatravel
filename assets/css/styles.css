@@ -3,14 +3,14 @@
 :root {
     --main-color :#1F4590;
     --second-color : #FFA451;
-    --body-color :#D0FCFF;
+    --body-color : linear-gradient(90deg, rgba(207,234,251,0.9854442265187325) 52%, rgba(156,224,235,1) 100%, rgba(152,238,255,1) 100%);
 
     --main-font : 'Open Sans', sans-serif;
     --heading-font : 'Raleway', sans-serif;
 }
 
 body {
-    background-color: var(--body-color);
+    background-image: linear-gradient(90deg, rgba(207,234,251,0.9854442265187325) 52%, rgba(156,224,235,1) 100%, rgba(152,238,255,1) 100%);
     font-family: var(--main-font);
 }
 
@@ -79,11 +79,6 @@ section {
     color: var(--main-color);
     font-family: var(--main-font);
     font-weight: 500;
-}
-
-.menu-wrapper .menu .menu-link .active {
-    font-weight: bold;
-    color: var(--second-color);
 }
 
 .menu-wrapper .menu .menu-link:hover {
@@ -390,6 +385,10 @@ section {
     cursor: pointer;
 }
 
+.row1 .toggle-slider i:hover{
+    color: #195de4;
+}
+
 .product-wrapper .row2{
     margin-top: 100px;
     margin-bottom: 150px;
@@ -631,8 +630,14 @@ section {
     justify-content: space-between;
 }
 
-.testi-wrapper .col-heading, .col-slider-testi {
-    width: 650px;
+.testi-wrapper .col-heading {
+    width: 500px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.testi-wrapper .col-slider-testi {
+    width: 500px;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -776,6 +781,10 @@ section {
     font-size: 3rem;
     color: var(--main-color);
     margin: 15px 5px;
+}
+
+.sosmed-icon i:hover{
+    color: #195de4;
 }
 
 .col-1-footer .copyrights {
@@ -995,6 +1004,55 @@ section {
 
 @media screen and (max-width: 450px) {
     
+    .home-wrapper .content-left{
+        text-align: center;
+        margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .home-wrapper .content-right{
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    .content-right .img-wrapper img{
+        width: 120%;
+        height: 120%;
+    }
+    .home-wrapper .heading {
+        font-size: 2.4rem;
+        margin: auto;
+        text-align: center;
+    }
+    .home-wrapper .box-wrapper {
+        gap: 30px;
+        margin: auto;
+        justify-content: center;
+    }
+    .home-wrapper .heading span {
+        font-size: 1.9rem;
+    }
+    
+    .home-wrapper .subheading {
+        font-size: 1rem;
+        margin: 30px 15px;
+    }
+    .content-left .form-panel {
+        display: block;
+        width: auto;
+    }
+    .form-panel .title-form {
+        display: block;
+        position: relative;
+        align-items: center;
+    }
+    .banner1{
+        align-items: center;
+    }
     .banner1 .heading {
         text-align: center;
     }
@@ -1004,6 +1062,7 @@ section {
         width: 220px;
         text-align: center;
         align-items: center;
+        margin: 10px auto;
     }
     .banner1 .btn-book {
         margin: 30px auto;
@@ -1012,12 +1071,28 @@ section {
     .banner1 p{
         text-align: center;
     }
+    .product .product-wrapper{
+        margin: auto 15px;
+    }
+    .row1 .heading-product {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .row1 .toggle-slider i{
+        font-size: 2rem;
+        margin: auto;
+        display: inline;
+        align-items: center;
+    }
     .testi-wrapper {
         flex-wrap: wrap;
     }
     .testi-wrapper .col-slider-testi {
         width: 350px;
         margin: 30px auto;
+    }
+    .testi-wrapper .col-heading {
+        margin: auto 15px;
     }
     .banner2-wrapper {
         padding: 1rem 2rem;
