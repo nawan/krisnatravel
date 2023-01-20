@@ -1036,19 +1036,38 @@ section {
     .home-wrapper .heading span {
         font-size: 1.9rem;
     }
-    
+    .home-wrapper .box {
+        margin: 15px;
+        gap: 10px;
+    }
     .home-wrapper .subheading {
         font-size: 1rem;
         margin: 30px 15px;
     }
     .content-left .form-panel {
         display: block;
-        width: auto;
+        width: 100%;
+        border-radius: 0px;
+        border: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .form-panel .form-location .loc, .form-date .cal {
+        margin: 15px 30px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
     }
     .form-panel .title-form {
         display: block;
         position: relative;
         align-items: center;
+    }
+    .form-panel .btn-search {
+        margin: 15px auto;
+    }
+    .content-left .suggestion {
+        margin-top: 90px;
     }
     .banner1{
         align-items: center;
